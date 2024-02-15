@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style>
+
+        .header {
+            background-color: #273a4df7;
+            /* Navbar background color */
+            color: #ffffff;
+            /* Navbar text color */
+            margin-bottom: 10px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .header .navbar-nav .nav-link {
+            color: #ffffff;
+            /* Navbar link color */
+        }
+
+        .product-card {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .purchase-button {
+            border-radius: 20px;
+            width: 50%;
+        }
+
+        .my_footer{
+            /* position: absolute; */
+            bottom: 0px;
+            width: 100%;
+            background-color: #273a4df7;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f8f9fa;">
+
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">Grocery Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="row mb-4 align-items-end">
+            <div class="col-md-5">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for items...">
+                <button class="btn btn-primary" type="button">Search</button>
+              </div>
+            </div>
+            <div class="col-md-2 text-center w-25">
+              <button class="btn btn-success">Show All Items</button>
+            </div>
+          </div>
+        <div class="row row-cols-2 row-cols-lg-3 g-4">
+            <!-- Sample product card -->
+            <div class="col ">
+                <div class="card product-card bg-light">
+                    <img src="https://via.placeholder.com/300" class="card-img-top product-image" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Name</h5>
+                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-text text-success">Price: $10.00</p>
+                        <p class="card-text text-muted">Stock Quantity: 100</p>
+                        <button class="btn btn-primary purchase-button">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat product cards for each product -->
+            <!-- Sample product card -->
+            <div class="col">
+                <div class="card product-card bg-light ">
+                    <img src="https://via.placeholder.com/300" class="card-img-top product-image" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Name</h5>
+                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-text text-success">Price: $10.00</p>
+                        <p class="card-text text-muted">Stock Quantity: 100</p>
+                        <button class="btn btn-primary purchase-button">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card bg-light ">
+                    <img src="https://via.placeholder.com/300" class="card-img-top product-image" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Name</h5>
+                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-text text-success">Price: $10.00</p>
+                        <p class="card-text text-muted">Stock Quantity: 100</p>
+                        <button class="btn btn-primary purchase-button">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card bg-light ">
+                    <img src="https://via.placeholder.com/300" class="card-img-top product-image" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Name</h5>
+                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-text text-success">Price: $10.00</p>
+                        <p class="card-text text-muted">Stock Quantity: 100</p>
+                        <button class="btn btn-primary purchase-button">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card product-card bg-light ">
+                    <img src="https://via.placeholder.com/300" class="card-img-top product-image" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Name</h5>
+                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-text text-success">Price: $10.00</p>
+                        <p class="card-text text-muted">Stock Quantity: 100</p>
+                        <button class="btn btn-primary purchase-button">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 my_footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2024 Grocery Store</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0 text-light">Made by you</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
